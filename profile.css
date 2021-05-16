@@ -1,0 +1,116 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  
+  .round-button {
+    width:12%;
+  }
+  .round-button-circle {
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    border:3px solid #ffffff;
+    overflow:hidden;
+          
+    background: #cbd0d6; 
+    box-shadow: 0 0 3px gray;
+  }
+  .round-button-circle:hover {
+    background:whitesmoke;
+  }
+  .round-button a {
+    display:block;
+    float:none;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+  color:#e2eaf3;
+  font-family:Verdana;
+  font-size:1.2em;
+  font-weight:bold;
+  text-decoration:none;
+}
+#gridview {
+  text-align:center; 
+}
+
+div.image {
+  padding-top: 1%;
+  border: ridge;
+   margin: 10px;
+   display: inline-block;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.image img {
+   width: 250px;
+   height: 350px;
+   border: 1px solid #212529;
+   padding:3px; 
+   background:#ddd; 
+}
+
+div.image img:hover {
+   box-shadow: 0 5px 5px 0 rgba(0,0,0,0.32), 0 0 0 0px rgba(0,0,0,0.16);
+}
+
+.heading{    
+   padding: 10px 10px;
+   border-radius: 2px;
+   color: #FFF;
+   background: #272d33;
+   margin-bottom:10px;
+   font-size: 1.5em;
+}
+#grid{
+   margin-bottom:30px;
+}
+.info{
+ 
+  text-align:center; 
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 1224px) {
+   div.image {
+       width: 300px;
+   }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+   div.image {
+       width: 250px;
+   }
+}
+
+@media screen and (min-width: 845px) and (max-width: 1044px) {
+   div.image {
+       width: 200px;
+   }
+}
